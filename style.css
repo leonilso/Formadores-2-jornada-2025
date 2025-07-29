@@ -28,3 +28,20 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+.lista-videos{
+    list-style-type: none;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.videos-recomendados{
+    width: 200px;
+}
+
+
+button{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
