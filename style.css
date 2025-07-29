@@ -41,6 +41,7 @@ main{
 }
 
 .recomedacoes{
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
