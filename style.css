@@ -40,6 +40,12 @@ main{
     width: 200px;
 }
 
+.recomedacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 button{
     margin: 0px;
