@@ -32,7 +32,8 @@ main{
 .lista-videos{
     list-style-type: none;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
+    gap: 10px;
 }
 
 .videos-recomendados{

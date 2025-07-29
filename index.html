@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Você e os tubos</title>
-    
 </head>
 <body>
     <header class="cabecalho">
@@ -15,7 +14,7 @@
     <main> 
         <div class="video-principal">
             <h2>O que são linguagens de programação?</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pYux8zKyVX4?si=soMljqxUo2PITZi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe id="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/pYux8zKyVX4?si=soMljqxUo2PITZi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <ul class="listaHorizontal">
                 <li><a class="tags" href="">#programação</a></li>
                 <li><a class="tags" href="">#html</a></li>
@@ -27,27 +26,33 @@
             <h2>Recomendados</h2>
             <ul class="lista-videos">
                 <li>
-                    <button onclick="mudarVideo">
+                    <button onclick="mudarVideo(this)" data-info="sv9dDtYnE1g">
                         <img class="videos-recomendados" src="https://img.youtube.com/vi/sv9dDtYnE1g/maxresdefault.jpg" alt="arduino">
                     </button>
                 </li>
                 <li>
-                    <button onclick="mudarVideo">
-                        <img class="videos-recomendados" src="https://img.youtube.com/vi/sv9dDtYnE1g/maxresdefault.jpg" alt="arduino">
+                    <button onclick="mudarVideo(this)" data-info="WRlfwBof66s">
+                        <img class="videos-recomendados" src="https://img.youtube.com/vi/WRlfwBof66s/maxresdefault.jpg" alt="js">
                     </button>
                 </li>
                 <li>
-                    <button onclick="mudarVideo">
-                        <img class="videos-recomendados" src="https://img.youtube.com/vi/sv9dDtYnE1g/maxresdefault.jpg" alt="arduino">
+                    <button onclick="mudarVideo(this)" data-info="4p7axLXXBGU">
+                        <img class="videos-recomendados" src="https://img.youtube.com/vi/4p7axLXXBGU/maxresdefault.jpg" alt="python">
                     </button>
                 </li>
                 <li>
-                    <button onclick="mudarVideo">
-                        <img class="videos-recomendados" src="https://img.youtube.com/vi/sv9dDtYnE1g/maxresdefault.jpg" alt="arduino">
+                    <button onclick="mudarVideo(this)" data-info="OFLMhFuArXQ">
+                        <img class="videos-recomendados" src="https://img.youtube.com/vi/OFLMhFuArXQ/maxresdefault.jpg" alt="sql">
+                    </button>
+                </li>
+                <li>
+                    <button onclick="mudarVideo(this)" data-info="8DhQG27oLPs">
+                        <img class="videos-recomendados" src="https://img.youtube.com/vi/8DhQG27oLPs/maxresdefault.jpg" alt="scratch">
                     </button>
                 </li>
             </ul>
         </div>
     </main>
 </body>
+<script src="index.js"></script>
 </html>
