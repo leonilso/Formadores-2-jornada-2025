@@ -11,19 +11,9 @@ let dicionarioLinks = {
 function mudarVideo(elemento){
     let videoIframe = document.getElementById('iframe-video');
     let srcAntigo = videoIframe.src;
-    console.log(srcAntigo);
-    let chave = pegarChave(dicionarioLinks, srcAntigo)
+    let chave = Object.entries(dicionarioLinks).find(([key, val]) => val === srcAntigo)?.[0];
+    console.log(chave)
     videoIframe.src = dicionarioLinks[elemento.dataset.info];
     elemento.dataset.info = chave;
     elemento.firstElementChild.src = `https://img.youtube.com/vi/${chave}/maxresdefault.jpg`;
-}
-
-function pegarChave(obj, valor){
-    let chave = null;
-    for (let key in obj) {
-        if (obj[key] === valor) {
-            chave = key;
-            break;
-        }
-    }
 }
