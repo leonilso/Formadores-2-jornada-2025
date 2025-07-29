@@ -11,6 +11,7 @@ let dicionarioLinks = {
 function mudarVideo(elemento){
     let videoIframe = document.getElementById('iframe-video');
     let srcAntigo = videoIframe.src;
+    console.log(srcAntigo);
     let chave = pegarChave(dicionarioLinks, srcAntigo)
     videoIframe.src = dicionarioLinks[elemento.dataset.info];
     elemento.dataset.info = chave;
