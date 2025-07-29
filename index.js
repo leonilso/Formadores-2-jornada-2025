@@ -16,3 +16,13 @@ function mudarVideo(elemento){
     elemento.dataset.info = chave;
     elemento.firstElementChild.src = `https://img.youtube.com/vi/${chave}/maxresdefault.jpg`;
 }
+
+function pegarChave(obj, valor){
+    let chave = null;
+    for (let key in obj) {
+        if (obj[key] === valor) {
+            chave = key;
+            break;
+        }
+    }
+}
