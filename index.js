@@ -12,8 +12,8 @@ function mudarVideo(elemento){
     let videoIframe = document.getElementById('iframe-video');
     let srcAntigo = videoIframe.src;
     let chave = null
-    for(key in dicionarioLinks){
-        if(key === srcAntigo){
+    for(let key in dicionarioLinks){
+        if(key == srcAntigo){
             chave = key;
         }
     }
