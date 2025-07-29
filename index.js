@@ -11,7 +11,8 @@ let dicionarioLinks = {
 function mudarVideo(elemento){
     let videoIframe = document.getElementById('iframe-video');
     let srcAntigo = videoIframe.src;
-    let chave = Object.values(dicionarioLinks).includes(srcAntigo);
+    let chave = pegarChave(dicionarioLinks, srcAntigo)
     videoIframe.src = dicionarioLinks[elemento.dataset.info];
-    elemento.firstElementChild.src = `https://img.youtube.com/vi/${chave}/maxresdefault.jpg`
+    elemento.dataset.info = chave;
+    elemento.firstElementChild.src = `https://img.youtube.com/vi/${chave}/maxresdefault.jpg`;
 }
