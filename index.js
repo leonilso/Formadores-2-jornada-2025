@@ -4,7 +4,7 @@ let dicionarioLinks = {
     "WRlfwBof66s": "https://www.youtube.com/embed/WRlfwBof66s?si=WKkLBKaaYCKDcue1",
     "4p7axLXXBGU": "https://www.youtube.com/embed/4p7axLXXBGU?si=rt0qPZzpEDOYHSkP",
     "OFLMhFuArXQ": "https://www.youtube.com/embed/OFLMhFuArXQ?si=Jm4VmLTOguSqOTzD",
-    "8DhQG27oLPs": "https://www.youtube.com/embed/8DhQG27oLPs?si=ttcv9csMvWUkHPo_"
+    "8DhQG27oLPs": "https://www.youtube.com/embed/8DhQG27oLPs?si=ttcv9csMvWUkHPo_",
 }
 
 
